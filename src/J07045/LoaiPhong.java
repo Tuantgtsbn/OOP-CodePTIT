@@ -4,7 +4,7 @@ public class LoaiPhong implements Comparable<LoaiPhong>{
 	private String kyhieu,name,dongia,phi;
 
 	public LoaiPhong(String tmp) {
-		String[] arr=tmp.strip().split("\\s+");
+		String[] arr=tmp.trim().split("\\s+");
 		this.kyhieu = arr[0];
 		this.name = arr[1];
 		this.dongia = arr[2];

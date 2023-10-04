@@ -6,7 +6,7 @@ public class J07045 {
 	public static void main(String[] args)throws IOException {
 		// TODO Auto-generated method stub
 		ArrayList<LoaiPhong> ds = new ArrayList<>();
-		Scanner in =new Scanner(new File("PHONG.in"));
+		Scanner in =new Scanner(new File("D:\\Java_workspace\\OOP-CodePTIT\\src\\J07045\\PHONG.in"));
 		int n=Integer.parseInt(in.nextLine());
 		//List<LoaiPhong> list=new ArrayList<LoaiPhong>();
 		while(n-->0) {
