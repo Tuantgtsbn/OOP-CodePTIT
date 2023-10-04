@@ -1,14 +1,14 @@
 package J07045;
 
-public class Phong {
+public class LoaiPhong implements Comparable<LoaiPhong>{
 	private String kyhieu,name,dongia,phi;
 
-	public Phong(String kyhieu, String name, String dongia, String phi) {
-		super();
-		this.kyhieu = kyhieu;
-		this.name = name;
-		this.dongia = dongia;
-		this.phi = phi;
+	public LoaiPhong(String tmp) {
+		String[] arr=tmp.strip().split("\\s+");
+		this.kyhieu = arr[0];
+		this.name = arr[1];
+		this.dongia = arr[2];
+		this.phi = arr[3];
 	}
 
 	public String getKyhieu() {
@@ -26,11 +26,14 @@ public class Phong {
 	public String getPhi() {
 		return phi;
 	}
+	
 
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
 		return this.getKyhieu()+" "+this.getName()+" "+this.getDongia()+" "+this.getPhi();
 	}
-	
+	public int compareTo(LoaiPhong i) {
+		return this.getName().compareTo(i.getName());
+	}
 }

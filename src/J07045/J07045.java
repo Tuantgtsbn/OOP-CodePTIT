@@ -2,28 +2,19 @@ package J07045;
 import java.util.*;
 import java.io.*;
 public class J07045 {
-
+	
 	public static void main(String[] args)throws IOException {
 		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(new File("PHONG.in"));
-		int num=Integer.parseInt(sc.nextLine());
-		List<Phong> list=new ArrayList<Phong>();
-		while(num-->0) {
-			String[] arr=sc.nextLine().strip().split("\\s+");
-			list.add(new Phong(arr[0], arr[1], arr[2], arr[3]));
-			
+		ArrayList<LoaiPhong> ds = new ArrayList<>();
+		Scanner in =new Scanner(new File("PHONG.in"));
+		int n=Integer.parseInt(in.nextLine());
+		//List<LoaiPhong> list=new ArrayList<LoaiPhong>();
+		while(n-->0) {
+			ds.add(new LoaiPhong(in.nextLine()));
 		}
-		Collections.sort(list, new Comparator<Phong>() {
-
-			@Override
-			public int compare(Phong o1, Phong o2) {
-				// TODO Auto-generated method stub
-				return o1.getName().compareTo(o2.getName());
-			}
-			
-		});
-		for (Phong i :list) {
-			System.out.println(i);
+		Collections.sort(ds);
+		for (LoaiPhong tmp :ds) {
+			System.out.println(tmp);
 		}
 	}
 
