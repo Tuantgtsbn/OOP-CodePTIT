@@ -4,7 +4,7 @@ import java.util.*;
 public class J07050 {
 	public static void main(String[] args) throws IOException{
 		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(new File("C:\\Users\\Minh Tuan\\git\\repository\\OOP-CodePTIT\\src\\J07050\\MATHANG.in"));
+		Scanner sc=new Scanner(new File("MATHANG.in"));
 		int num=Integer.parseInt(sc.nextLine());
 		List<HangHoa> list=new ArrayList<HangHoa>();
 		while(num-->0) {
