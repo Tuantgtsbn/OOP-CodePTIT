@@ -5,7 +5,7 @@ public class J07051 {
 
 	public static void main(String[] args) throws IOException{
 		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(new File("KHACHHANG.in"));
+		Scanner sc=new Scanner(new File("D:\\Java_workspace\\OOP-CodePTIT\\src\\J07051\\KHACHHANG.in"));
 		int num=Integer.parseInt(sc.nextLine());
 		List<Khach> list=new ArrayList<Khach>();
 		while(num-->0) {
@@ -24,6 +24,9 @@ public class J07051 {
 		for(Khach i:list) {
 			System.out.println(i);
 		}
+		
+
+		
 	}
 
 }

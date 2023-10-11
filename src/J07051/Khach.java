@@ -1,4 +1,5 @@
 package J07051;
+import java.io.*;
 import java.time.*;
 import java.time.temporal.ChronoUnit;
 public class Khach {
@@ -24,6 +25,7 @@ public class Khach {
 	public String getId() {
 		return id;
 	}
+	
 	public static int getIndex() {
 		return index;
 	}
@@ -86,6 +88,8 @@ public class Khach {
 		// TODO Auto-generated method stub
 		return this.getId()+" "+this.chuanhoaten()+this.getRoom()+" "+this.songay()+" "+this.price();
 	}
+	
+	
 	
 	
 	
