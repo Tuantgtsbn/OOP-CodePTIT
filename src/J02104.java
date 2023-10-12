@@ -26,7 +26,7 @@ public class J02104 {
 		for(int i=0;i<n;i++)
 			for(int j=0;j<n;j++)
 				a[i][j]=sc.nextInt();
-		List<Pair>list=new ArrayList<Pair>();
+		List<Pair<Integer,Integer>>list=new ArrayList<Pair<Integer,Integer>>();
 		
 		for(int i=0;i<n;i++) {
 			for(int j=i+1;j<n;j++) {
@@ -35,8 +35,11 @@ public class J02104 {
 				}
 			}
 		}
-		list.forEach(item->System.out.println("("+item.key+","+item.value+")"));
-		sc.close();
+//		list.forEach(item->System.out.println("("+item.key+","+item.value+")"));
+//		sc.close();
+		for(Pair<Integer,Integer> item:list) {
+			System.out.println("("+item.key+","+item.value+")");
+		}
 	}
 
 }
