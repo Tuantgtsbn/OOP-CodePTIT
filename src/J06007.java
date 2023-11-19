@@ -1,3 +1,5 @@
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 class Subject{
 	private String subId,subName;
@@ -52,9 +54,9 @@ class Teacher{
 }
 public class J06007 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException{
 		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(System.in);
+		Scanner sc=new Scanner(new File("MONHOC.in"));
 		int numSub=Integer.parseInt(sc.nextLine());
 		List<Subject> ls1=new ArrayList<Subject>();
 		for(int i=0;i<numSub;i++) {
@@ -63,6 +65,7 @@ public class J06007 {
 			
 			
 		}
+		sc=new Scanner(new File("GIANGVIEN.in"));
 		int numTeach=Integer.parseInt(sc.nextLine());
 		List<Teacher> ls2=new ArrayList<Teacher>();
 		for(int i=0;i<numTeach;i++) {
@@ -71,6 +74,7 @@ public class J06007 {
 			
 			
 		}
+		sc=new Scanner(new File("GIOCHUAN.in"));
 		int numClass=Integer.parseInt(sc.nextLine());
 		for(int i=0;i<numClass;i++) {
 			String[] tokens=sc.nextLine().trim().split(" ");
